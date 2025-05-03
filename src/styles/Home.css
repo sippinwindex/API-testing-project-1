@@ -1,0 +1,21 @@
+/* src/Home.css */
+
+.character-card-wrapper {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom */
+  }
+  
+  .character-card-wrapper:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    z-index: 10; /* Bring the hovered card to the front */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: enhance shadow on hover */
+  }
+  
+  .card {
+    height: 100%; /* Ensure cards in the same row have the same height */
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px; /* Or adjust as needed */
+    object-fit: cover; /* Crop image nicely */
+  }
